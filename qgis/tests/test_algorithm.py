@@ -32,7 +32,8 @@ def test_sbanks_core_basic_functionality():
     n = 50
     y = np.sin(np.linspace(0, 4 * np.pi, n)) + 0.1 * np.random.randn(n)
     smoother = WhittakerSmoother(lmbda=1e4, order=2, data_length=n)
-    y_smooth = smoother.smooth(y.tolist())
+    y_smooth = smoother.smooth(y)
+    assert isinstance(y_smooth, np.ndarray)
     assert len(y_smooth) == n
 
     # Test smooth_open_geometry
