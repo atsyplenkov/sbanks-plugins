@@ -148,7 +148,7 @@ class SbanksAlgorithm(QgsProcessingAlgorithm):
             self.SMOOTHING_FACTOR,
             self.tr("Spline smoothing factor"),
             type=QgsProcessingParameterNumber.Double,
-            defaultValue=1.0,
+            defaultValue=100.0,
             minValue=0.0,
         )
         smoothing_factor_param.setFlags(

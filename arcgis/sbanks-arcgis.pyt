@@ -132,7 +132,7 @@ class SavitzkyGolayFilter:
             parameterType="Optional",
             direction="Input"
         )
-        param7.value = 1.0
+        param7.value = 100.0
 
         return [param0, param1, param2, param3, param4, param5, param6, param7]
 
@@ -401,7 +401,7 @@ class WhittakerEilersFilter:
             parameterType="Optional",
             direction="Input"
         )
-        param6.value = 1.0
+        param6.value = 100.0
 
         return [param0, param1, param2, param3, param4, param5, param6]
 
